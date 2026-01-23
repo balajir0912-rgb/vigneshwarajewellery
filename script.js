@@ -41,7 +41,7 @@ Date: ${date}
 Time: ${time}`;
 
   window.open(
-    "https://wa.me/8008898270?text=" + encodeURIComponent(msg),
+    "https://wa.me/8074720673?text=" + encodeURIComponent(msg),
     "_blank"
   );
 }
