@@ -1,4 +1,4 @@
-// Gold Rate Auto Update (Demo API)
+// Live Gold Rate (demo API)
 fetch("https://api.metals.live/v1/spot/gold")
   .then(res => res.json())
   .then(data => {
@@ -7,10 +7,23 @@ fetch("https://api.metals.live/v1/spot/gold")
   })
   .catch(() => {
     document.getElementById("goldRate").innerText =
-      "Live Gold Rate: Update unavailable";
+      "Live Gold Rate unavailable";
   });
 
-function sendWhatsApp() {
+// Product enquiry
+function enquire(product) {
+  let msg = `Hi Vigneshwara Jewellery,
+I am interested in ${product}.
+Please share more details.`;
+
+  window.open(
+    "https://wa.me/91XXXXXXXXXX?text=" + encodeURIComponent(msg),
+    "_blank"
+  );
+}
+
+// Appointment booking
+function bookSlot() {
   let product = document.getElementById("product").value;
   let date = document.getElementById("date").value;
   let time = document.getElementById("time").value;
@@ -20,19 +33,15 @@ function sendWhatsApp() {
     return;
   }
 
-  let message =
-`Hi Vigneshwara Jewellery 👋
-I would like to book an online jewellery slot.
+  let msg = `Hi Vigneshwara Jewellery,
+I would like to book an appointment.
 
-📿 Product: ${product}
-📅 Date: ${date}
-⏰ Time: ${time}
+Product: ${product}
+Date: ${date}
+Time: ${time}`;
 
-Please confirm availability.`;
-
-  let url =
-    "https://wa.me/8008898270?text=" +
-    encodeURIComponent(message);
-
-  window.open(url, "_blank");
+  window.open(
+    "https://wa.me/8008898270?text=" + encodeURIComponent(msg),
+    "_blank"
+  );
 }
