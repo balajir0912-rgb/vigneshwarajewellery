@@ -17,7 +17,7 @@ I am interested in ${product}.
 Please share more details.`;
 
   window.open(
-    "https://wa.me/91XXXXXXXXXX?text=" + encodeURIComponent(msg),
+    "https://wa.me/8074720673?text=" + encodeURIComponent(msg),
     "_blank"
   );
 }
