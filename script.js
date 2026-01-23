@@ -31,7 +31,7 @@ I would like to book an online jewellery slot.
 Please confirm availability.`;
 
   let url =
-    "https://wa.me/91XXXXXXXXXX?text=" +
+    "https://wa.me/8008898270?text=" +
     encodeURIComponent(message);
 
   window.open(url, "_blank");
