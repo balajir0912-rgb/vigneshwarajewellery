@@ -8,54 +8,78 @@
 </head>
 <body>
 
-<header class="hero">
-  <h1>Vigneshwara Jewellery</h1>
-  <p>Pure Gold • Silver • Diamond Jewellery</p>
-  <div id="goldRate">Loading gold rate...</div>
-
-  <a class="btn" 
-     href="https://wa.me/8008898270?text=Hi%20Vigneshwara%20Jewellery,%20I%20want%20to%20book%20a%20jewellery%20demo.%20Please%20contact%20me.">
-     📲 Book Demo on WhatsApp
-  </a>
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">Vigneshwara Jewellery</div>
+  <nav>
+    <a href="#collections">Collections</a>
+    <a href="#products">Jewellery</a>
+    <a href="#appointment">Appointment</a>
+  </nav>
 </header>
 
-<section class="products">
+<!-- HERO -->
+<section class="hero">
+  <h1>Crafted Elegance for Every Occasion</h1>
+  <p>Gold • Diamond • Silver • Bridal Jewellery</p>
+  <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20would%20like%20to%20book%20a%20jewellery%20appointment">
+    Book Appointment on WhatsApp
+  </a>
+  <div id="goldRate">Loading gold rate...</div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections" class="collections">
   <h2>Our Collections</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7b2c5b0c9" />
-      <h3>Gold Chain</h3>
-      <p>₹55,000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" />
-      <h3>Gold Necklace</h3>
-      <p>₹1,20,000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1620799139504-55c1a32a0b44" />
-      <h3>Diamond Ring</h3>
-      <p>₹75,000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155223169b" />
-      <h3>Silver Anklet</h3>
-      <p>₹12,000</p>
-    </div>
-
+  <div class="collection-grid">
+    <div class="collection">Gold Jewellery</div>
+    <div class="collection">Diamond Jewellery</div>
+    <div class="collection">Silver Jewellery</div>
+    <div class="collection">Bridal Collection</div>
   </div>
 </section>
 
-<section class="booking">
-  <h2>Online Slot Booking</h2>
+<!-- PRODUCTS -->
+<section id="products" class="products">
+  <h2>Featured Jewellery</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7b2c5b0c9">
+      <h3>Gold Chain</h3>
+      <p>Starting from ₹55,000</p>
+      <button onclick="enquire('Gold Chain')">Enquire</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+      <h3>Gold Necklace</h3>
+      <p>Starting from ₹1,20,000</p>
+      <button onclick="enquire('Gold Necklace')">Enquire</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1620799139504-55c1a32a0b44">
+      <h3>Diamond Ring</h3>
+      <p>Starting from ₹75,000</p>
+      <button onclick="enquire('Diamond Ring')">Enquire</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223169b">
+      <h3>Silver Anklet</h3>
+      <p>Starting from ₹12,000</p>
+      <button onclick="enquire('Silver Anklet')">Enquire</button>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment" class="appointment">
+  <h2>Book an Appointment</h2>
 
   <select id="product">
-    <option value="">Select Product</option>
+    <option value="">Select Jewellery</option>
     <option>Gold Chain</option>
     <option>Gold Necklace</option>
     <option>Diamond Ring</option>
@@ -65,9 +89,10 @@
   <input type="date" id="date">
   <input type="time" id="time">
 
-  <button onclick="sendWhatsApp()">📩 Book Slot on WhatsApp</button>
+  <button onclick="bookSlot()">Book on WhatsApp</button>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Vigneshwara Jewellery. All Rights Reserved.</p>
 </footer>
