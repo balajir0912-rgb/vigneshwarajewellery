@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vigneshwara Jewellery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Vigneshwara Jewellery</h1>
+  <p>Pure Gold • Silver • Diamond Jewellery</p>
+  <div id="goldRate">Loading gold rate...</div>
+
+  <a class="btn" 
+     href="https://wa.me/91XXXXXXXXXX?text=Hi%20Vigneshwara%20Jewellery,%20I%20want%20to%20book%20a%20jewellery%20demo.%20Please%20contact%20me.">
+     📲 Book Demo on WhatsApp
+  </a>
+</header>
+
+<section class="products">
+  <h2>Our Collections</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7b2c5b0c9" />
+      <h3>Gold Chain</h3>
+      <p>₹55,000</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" />
+      <h3>Gold Necklace</h3>
+      <p>₹1,20,000</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620799139504-55c1a32a0b44" />
+      <h3>Diamond Ring</h3>
+      <p>₹75,000</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223169b" />
+      <h3>Silver Anklet</h3>
+      <p>₹12,000</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="booking">
+  <h2>Online Slot Booking</h2>
+
+  <select id="product">
+    <option value="">Select Product</option>
+    <option>Gold Chain</option>
+    <option>Gold Necklace</option>
+    <option>Diamond Ring</option>
+    <option>Silver Anklet</option>
+  </select>
+
+  <input type="date" id="date">
+  <input type="time" id="time">
+
+  <button onclick="sendWhatsApp()">📩 Book Slot on WhatsApp</button>
+</section>
+
+<footer>
+  <p>© 2026 Vigneshwara Jewellery. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
